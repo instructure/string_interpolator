@@ -78,7 +78,7 @@ require 'strscan'
 # hundred characters in length (but their replacements aren't). I'll rewrite it as a bunch of loops if that ever
 # actually becomes a problem for anyone (but I'll probably question your sanity for using such long placeholders
 # first).
-class Interpolator
+class StringInterpolator
   # Create a new interpolator that uses the specified herald, or '%' if one isn't specified.
   def initialize(herald = '%', literal: true)
     @herald = herald
